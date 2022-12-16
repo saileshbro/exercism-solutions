@@ -1,0 +1,23 @@
+name: exercism-dart-solutions
+repository: https://github.com/saileshbro/exercism-solutions
+
+packages:
+  - hello-world/**
+  - leap/**
+  - two-fer/**
+
+scripts:
+  analyze:
+    run: |
+      melos exec -c 5 --ignore="*example*" -- \
+        dart analyze --fatal-infos .
+    description: |
+      Run `dart analyze` in all packages.
+       - Note: you can also rely on your IDEs Dart Analysis / Issues window.
+
+  test:
+    run: melos exec -c 1 --fail-fast -- "dart test"
+    description: Run Dart tests for a specific package in this project.
+    select-package:
+      flutter: false
+      dir-exists: test
