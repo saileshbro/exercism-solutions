@@ -2,9 +2,7 @@ name: exercism-dart-solutions
 repository: https://github.com/saileshbro/exercism-solutions
 
 packages:
-  - hello-world/**
-  - leap/**
-  - two-fer/**
+  - /**/pubspec.yaml
 
 scripts:
   analyze:
